@@ -12,7 +12,7 @@ PomAROS builds on [AROS](https://github.com/aros-development-team/AROS), with sh
 
 Start with the README in the project that matches how you want to run AROS. Each repository includes build instructions, measured results and current limitations. These are development projects, not finished releases; QEMU is not yet qualified for safe persistence across an ordinary window close.
 
-All three targets use the same reviewed AROS source revision. VM and QEMU share the same guest kernel binaries; Hosted has a separate build for macOS. The longer-term goal is to reuse the kernel work across native Apple Silicon and Raspberry Pi targets. Building the complete system currently requires access to the private shared AROS source checkout referenced by each project's build instructions.
+All three targets use the same reviewed source revision from [the public shared AROS core](https://github.com/pomaros/aros-core), a fork retaining official AROS history. VM and QEMU share the same guest kernel build; Hosted has a separate build for macOS that preserves its host ABI. Each product pins its core revision and documents the build prerequisites. The longer-term goal is to reuse the kernel work across native Apple Silicon and Raspberry Pi targets.
 
 Bug reports and contributions are welcome through the relevant repository's issues and pull requests. General AROS improvements are submitted upstream as focused changes.
 
