@@ -14,6 +14,16 @@ Start with the README in the project that matches how you want to run AROS. Each
 
 All three targets use the same reviewed source revision from [the public shared AROS core](https://github.com/pomaros/aros-core), a fork retaining official AROS history. VM and QEMU share the same guest kernel build; Hosted has a separate build for macOS that preserves its host ABI. Each product pins its core revision and documents the build prerequisites. The longer-term goal is to reuse the kernel work across native Apple Silicon and Raspberry Pi targets.
 
+## Software for AROS
+
+Native AROS programs and the tools that build them, for PomAROS and native AROS on AArch64:
+
+| Repository | What |
+| --- | --- |
+| [rust-aros](https://github.com/pomaros/rust-aros) | Rust for native AROS with the official, unmodified compiler: target, standard library patch, native adapters and crate patches. |
+| [gpui-aros](https://github.com/pomaros/gpui-aros) | The AROS platform backend for GPUI, the UI framework of the Zed editor: Intuition windows, CPU rendering, menus, requesters and clipboard. |
+| [gpui-kit](https://github.com/pomaros/gpui-kit) | The gpui-kit component library with its AROS port (branch `aros-port-0.7.1`). |
+
 Bug reports and contributions are welcome through the relevant repository's issues and pull requests. General AROS improvements are submitted upstream as focused changes.
 
 [PomAROS](https://github.com/pomaros) · [jonx](https://github.com/jonx)
