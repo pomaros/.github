@@ -23,6 +23,7 @@ Native AROS programs and the tools that build them, for PomAROS and native AROS 
 | [rust-aros](https://github.com/pomaros/rust-aros) | Rust for native AROS with the official, unmodified compiler: target, standard library patch, native adapters and crate patches. |
 | [gpui-aros](https://github.com/pomaros/gpui-aros) | The AROS platform backend for GPUI, the UI framework of the Zed editor: Intuition windows, CPU rendering, menus, requesters and clipboard. |
 | [gpui-kit](https://github.com/pomaros/gpui-kit) | The gpui-kit component library with its AROS port (branch `aros-port-0.7.1`). |
+| [Ferail](https://github.com/jonx/Ferail) | A file manager for macOS, Windows, Linux and AROS, built on GPUI; its AROS port uses the three repositories above. |
 
 Bug reports and contributions are welcome through the relevant repository's issues and pull requests. General AROS improvements are submitted upstream as focused changes.
 
